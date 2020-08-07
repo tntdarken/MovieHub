@@ -248,7 +248,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // responsible for checking the pagination retrieved from the webserver and to load more data if possible
         if(pagination <= self.filmes!.total_pages!){        
             pagination += 1
-            http.get(url: "https://api.themoviedb.org/3/movie/upcoming?api_key=c5850ed73901b8d268d0898a8a9d8bff&language=en-US&page=\(pagination)", param: nil) { (filmes: Filmes?, nil) in
+            http.get(url: "\(Constants.url_upcoming_movies)\(self.pagination)", param: nil) { (filmes: Filmes?, nil) in
                 self.filmes!.results! += filmes!.results!
                 self.tableView.reloadData()
             }
