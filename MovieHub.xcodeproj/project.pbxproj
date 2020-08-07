@@ -27,6 +27,7 @@
 		2D65214F24DA576C00F08B7F /* DownloadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D65214E24DA576B00F08B7F /* DownloadImageView.swift */; };
 		2D65215624DB143800F08B7F /* MovieDetailControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D65215424DB143800F08B7F /* MovieDetailControllerViewController.swift */; };
 		2D65215724DB143800F08B7F /* MovieDetailControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D65215524DB143800F08B7F /* MovieDetailControllerViewController.xib */; };
+		2DA2A1B324DCD4F300FE5DE4 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2A1B224DCD4F300FE5DE4 /* Urls.swift */; };
 		2DB6E14324DC823300D6C5F4 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D65214324DA34A100F08B7F /* Structs.swift */; };
 		2DB6E15524DCBF7800D6C5F4 /* Screen Shot 2020-08-06 at 19.42.11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6E15124DCBF7500D6C5F4 /* Screen Shot 2020-08-06 at 19.42.11.png */; };
 		2DB6E15624DCBF7800D6C5F4 /* Screen Shot 2020-08-06 at 19.43.56.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB6E15224DCBF7600D6C5F4 /* Screen Shot 2020-08-06 at 19.43.56.png */; };
@@ -70,6 +71,7 @@
 		2D65214E24DA576B00F08B7F /* DownloadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImageView.swift; sourceTree = "<group>"; };
 		2D65215424DB143800F08B7F /* MovieDetailControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailControllerViewController.swift; sourceTree = "<group>"; };
 		2D65215524DB143800F08B7F /* MovieDetailControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailControllerViewController.xib; sourceTree = "<group>"; };
+		2DA2A1B224DCD4F300FE5DE4 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		2DB6E15124DCBF7500D6C5F4 /* Screen Shot 2020-08-06 at 19.42.11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-08-06 at 19.42.11.png"; sourceTree = "<group>"; };
 		2DB6E15224DCBF7600D6C5F4 /* Screen Shot 2020-08-06 at 19.43.56.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-08-06 at 19.43.56.png"; sourceTree = "<group>"; };
 		2DB6E15324DCBF7700D6C5F4 /* Screen Shot 2020-08-06 at 19.41.39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-08-06 at 19.41.39.png"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		2D6520FA24D9FC2E00F08B7F = {
 			isa = PBXGroup;
 			children = (
+				2DA2A1B224DCD4F300FE5DE4 /* Urls.swift */,
 				2D65210524D9FC2E00F08B7F /* MovieHub */,
 				2D65211C24D9FC3400F08B7F /* MovieHubTests */,
 				2D65210424D9FC2E00F08B7F /* Products */,
@@ -307,6 +310,7 @@
 				2D65210724D9FC2E00F08B7F /* AppDelegate.swift in Sources */,
 				2D65212B24D9FFBA00F08B7F /* CustomTabBarController.swift in Sources */,
 				2D65213324D9FFC500F08B7F /* MainViewController.swift in Sources */,
+				2DA2A1B324DCD4F300FE5DE4 /* Urls.swift in Sources */,
 				2D65212C24D9FFBA00F08B7F /* CustomNavigateController.swift in Sources */,
 				2D65214C24DA34A200F08B7F /* ParsingStrategy.swift in Sources */,
 				2D65214824DA34A200F08B7F /* MoviesViewController.swift in Sources */,

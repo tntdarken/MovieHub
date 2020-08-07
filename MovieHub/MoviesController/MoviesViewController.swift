@@ -44,7 +44,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // load genres
         queue.addOperation {
-            self.http.get(url: "https://api.themoviedb.org/3/genre/movie/list?api_key=c5850ed73901b8d268d0898a8a9d8bff&language=en-US", param: nil) { (genres: Genres?, nil) in
+            self.http.get(url: Constants.url_movie_genres, param: nil) { (genres: Genres?, nil) in
                 self.movieGenres = genres
             }
         }
@@ -79,7 +79,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func loadUpcomingMovies() {
         mainQueue.addOperation {
-            self.http.get(url: "https://api.themoviedb.org/3/movie/upcoming?api_key=c5850ed73901b8d268d0898a8a9d8bff&language=en-US&page=\(self.pagination)", param: nil) { (filmes: Filmes?, error) in
+            self.http.get(url: "\(Constants.url_upcoming_movies)\(self.pagination)", param: nil) { (filmes: Filmes?, error) in
                 if(error?.tipo != 1) {
                     self.filmes = filmes
                     DispatchQueue.main.async {
@@ -119,7 +119,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             let str = textField!.text!
             self.mainQueue.addOperation {
-                self.http.get(url: "https://api.themoviedb.org/3/search/movie?api_key=c5850ed73901b8d268d0898a8a9d8bff&query=\(str.replace(" ", with: "+"))", param: nil) { (filmes: Filmes?, error) in
+                self.http.get(url: "\(Constants.url_single_movie)\(str.replace(" ", with: "+"))", param: nil) { (filmes: Filmes?, error) in
                     if(error?.tipo != 1) {
                         self.filmes = filmes
                         DispatchQueue.main.async {
